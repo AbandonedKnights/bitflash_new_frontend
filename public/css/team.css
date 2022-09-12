@@ -1,0 +1,349 @@
+
+  
+  html, body {
+    min-height: 100%;
+  }
+  
+
+  li {
+    list-style: none;
+  }
+  
+  
+  /* style member component */
+  .list-members {
+    background:#f1f1f1;
+    width: 100%;
+    /* margin: 4% auto; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .member {
+    flex-basis: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .member-image {
+    width: 40%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    
+  }
+  
+  .member-image:hover img {
+    transform: scale(1.1);
+
+  }
+  
+  .member-info {
+    width: 50%;
+    text-align: center;
+    
+  }
+  
+  .member-info p {
+    margin: 20px 0;
+  }
+  
+  
+  /* style social link */
+  .social-link .fab {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #000;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: transform .5s;
+    background: rgb(0, 0, 0);
+  }
+  
+  .social-link .fab:hover {
+    background: #000;
+    color: #ffe501;
+    transform: translateY(-7px);
+  }
+  
+  /* Membuat segitiga */
+  .member-image::after {
+    content: '';
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #e61111;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  
+  /* Merubah posisi member-image dengan member-info */
+  @media screen and (min-width: 771px) {
+    .member:nth-child(4n+3) .member-info,
+    .member:nth-child(4n+4) .member-info {
+      order: 1;
+    }
+    .member:nth-child(4n+3) .member-image,
+    .member:nth-child(4n+4) .member-image {
+      order: 2;
+    }
+  
+    /* Merubah posisi sigitiga pada baris genap */
+    .member:nth-child(4n+3) .member-image::after,
+    .member:nth-child(4n+4) .member-image::after {
+      left: 0;
+      right: auto;
+      transform: translateY(-50%) rotateZ(180deg);
+    }
+  }
+  
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 770px) {
+    .list-members {
+      width: 95%;
+    }
+    .member {
+      flex-basis: 100%;
+      font-size: 14px;
+    }
+    .social-link .fab {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+  
+    .member:nth-child(even) .member-info {
+      order: 1;
+    }
+    .member:nth-child(even) .member-image {
+      order: 2;
+    }
+    
+    /* Merubah posisi sigitiga elemen genap */
+    .member:nth-child(even) .member-image::after {
+      left: 0;
+      right: auto;
+      transform: translateY(-50%) rotateZ(180deg);
+    }
+  }
+
+
+
+
+  /* actice case code pen code */
+
+  .centerer {
+    
+    top: 50%;
+    left: 80%;
+    position: absolute;
+    margin-top: -140px;
+  }
+  
+  
+  .window {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .flex-cont {
+    height: 280px;
+    width: 500px;
+    position: absolute;
+  }
+  
+  .title{
+    line-height: 20px;
+    position: absolute;
+    font-weight: 300;
+    color: #DB728D;
+  }
+  
+  .site-name {
+    font-weight: 400;
+    color: #FFA8D2;
+    padding: 5px 12px 5px 12px;
+    background-color: #333333;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px #534f4f ;
+    margin-left: 3px;
+  }
+  
+  .columns {
+    margin: 0px;
+    top: 60px;
+    position: absolute;
+  }
+  
+  .name-column {
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .name {
+    color: #000000;
+    line-height: 50px;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+  
+  .name ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .bar-column {
+    left:0px;
+    top: 38px;
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .bar {
+    height: 8px;
+    width: 260px;
+    border-radius: 4px;
+    background-color: #484B53;
+    position: absolute;
+  }
+  
+  .fill {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #FF8095;
+    box-shadow: 0px 0px 30px #FF2AA6;
+    position: absolute;
+  }
+  
+  .fill-u {
+    width: 180px;
+    animation-name: filling-u;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: initial;
+  }
+  
+  @keyframes filling-u {
+    0% {
+      box-shadow: 0px 0px 0px #FF2AA6;
+      width: 0px;
+    }
+    100% {
+      box-shadow: 0px 0px 30px #FF2AA6;
+      width: 180px;
+    }
+  }
+  
+  .c-bar-p {
+    margin-top: 50px;
+  }
+  
+  .fill-p {
+    width: 198px;
+    animation-name: filling-p;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: initial;
+  }
+  
+  @keyframes filling-p {
+    0% {
+      box-shadow: 0px 0px 0px #FF2AA6;
+      width: 0px;
+    }
+    100% {
+      box-shadow: 0px 0px 30px #FF2AA6;
+      width: 198px;
+    }
+  }
+    
+  .c-bar-ns {
+    margin-top: 100px;
+  }
+  
+  .fill-ns {
+    width: 130px;
+    animation-name: filling-ns;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: initial;
+  }
+  
+  @keyframes filling-ns {
+    0% {
+      box-shadow: 0px 0px 0px #FF2AA6;
+      width: 0px;
+    }
+    100% {
+      box-shadow: 0px 0px 30px #FF2AA6;
+      width: 130px;
+    }
+  }
+  
+  .c-bar-br {
+    margin-top: 150px;
+  }
+  
+  .fill-br {
+    width: 190px;
+    animation-name: filling-br;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: initial;
+  }
+  
+  @keyframes filling-br {
+    0% {
+      box-shadow: 0px 0px 0px #FF2AA6;
+      width: 0px;
+    }
+    100% {
+      box-shadow: 0px 0px 30px #FF2AA6;
+      width: 190px;
+    }
+  }
+  
+  .num-column {
+    left: 430px;
+    position: absolute;
+  }
+  
+  .number {
+    color: #727681;
+    line-height: 50px;
+    font-weight: 300;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: initial;
+  }
+  
+  .number ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

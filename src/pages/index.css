@@ -1,0 +1,190 @@
+.anticon {
+    display: inline-block;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .anticon > * {
+    line-height: 1;
+  }
+
+  .anticon svg {
+    display: inline-block;
+  }
+
+  .anticon::before {
+    display: none;
+  }
+
+  .anticon .anticon-icon {
+    display: block;
+  }
+
+  .anticon[tabindex] {
+    cursor: pointer;
+  }
+
+  .anticon-spin::before,
+  .anticon-spin {
+    display: inline-block;
+    -webkit-animation: loadingCircle 1s infinite linear;
+    animation: loadingCircle 1s infinite linear;
+  }
+
+  @-webkit-keyframes loadingCircle {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes loadingCircle {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  
+
+
+
+
+  
+
+
+
+
+
+  .input-stake-withdraw {
+    width: 100%;
+  }
+  .input-stake-withdraw .input-stake-withdraw {
+    width: 100%;
+  }
+  .input-stake-withdraw .actions-farm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+  }
+  
+  .actions-farm .action-stake,
+  .actions-farm .action-withdraw {
+    width: 48.9%;
+  }
+  
+  .actions-farm .action-stake {
+    padding-right: 0.15rem;
+  }
+  .actions-farm .action-withdraw {
+    padding-left: 0.15rem;
+  }
+  
+  .actions-farm .action-stake button,
+  .actions-farm .action-withdraw button {
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+  
+  .input-stake-withdraw .actions-farm .action-stake .ant-btn {
+    background: #2fc19a;
+    border-color: #2fc19a;
+    color: white;
+  }
+  
+  .input-stake-withdraw .actions-farm .action-withdraw .ant-btn{
+    background: #f09e40;
+    border-color:#f09e40;
+    color: white;
+  }
+  
+  .input-stake-withdraw .input-amount {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    margin: 0.5rem 0;
+  }
+  .input-stake-withdraw .input-amount .ant-input-number {
+    border-radius: 0.75rem;
+  }
+  
+  .input-stake-withdraw .input-amount .ant-input-number-handler-wrap {
+    display: none;
+  }
+  
+  .input-stake-withdraw .input-amount .input-amount-stake,
+  .input-stake-withdraw .input-amount .input-amount-unstake {
+    width: 48.9%;
+    border: 1px solid rgb(0 0 0 / 1%);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    background: rgb(190 190 190 / 25%);
+  }
+  
+  .input-stake-withdraw .input-amount .input-amount-stake:hover,
+  .input-stake-withdraw .input-amount .input-amount-unstake:hover {
+    background: rgb(0 0 0 / 20%);
+  }
+  
+  .input-stake-withdraw .input-amount .input-amount-stake {
+    margin-right: 0.15rem;
+  }
+  .input-stake-withdraw .input-amount .input-amount-unstake {
+    margin-left: 0.15rem;
+  }
+  
+  .input-stake-withdraw .input-amount .input-amount-stake .ant-input-number,
+  .input-stake-withdraw .input-amount .input-amount-unstake .ant-input-number {
+    width: 78%;
+    background: white;
+    border-radius: 0.75rem;
+  }
+  .input-stake-withdraw .input-amount .input-amount-stake .btn-max,
+  .input-stake-withdraw .input-amount .input-amount-unstake .btn-max {
+    width: 24%;
+    padding: 0.6rem 0.1rem;
+    font-size: 0.7rem;
+    height: 100%;
+    height: 38px;
+    cursor: pointer;
+  }
+  
+  .staked-lp-amount,
+  .balance-lp-amount {
+    font-size: 1rem;
+  }
+  
+  .balance-lp,
+  .staked-lp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  .ant-input-number-input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 9px 3px;
+  }

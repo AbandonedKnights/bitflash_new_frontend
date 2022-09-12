@@ -1,0 +1,42 @@
+.banner {
+  background-image: url("../image/final_green.gif");
+  background-size: 500px;
+  background-position: center;
+  height:400px;
+  background-repeat: no-repeat;
+}
+.trade_icons{
+    height: 50px;
+    width: 100px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannertxt{
+    font-size: 48px; 
+    white-space: nowrap;
+}
+
+@media (max-width:600px){
+  .gifimg{
+      width: 100%;
+  }
+  .bannertxt{
+      white-space: normal !important;
+  }
+  .banner {
+    background-size: contain;
+    background-position: top;
+    height: 300px;
+    background-repeat: no-repeat;
+  }
+  .mysocial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

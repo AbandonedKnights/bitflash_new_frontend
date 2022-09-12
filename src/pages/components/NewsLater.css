@@ -1,0 +1,79 @@
+.news-type {
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(153, 153, 153, 0);
+    position: relative;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border-left: solid 2px; */
+    /* border-right: solid 2px; */
+    background-color: transparent;
+}
+.news-type.info {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 174, 0)
+}
+.news-type.danger {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0)
+}
+.news-type.primary {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 119, 255)
+}
+.news-type.success {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 170, 0)
+}
+#newslater{
+    background-color: transparent;
+ 
+    animation-name: mymove;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    white-space:nowrap;
+
+}
+
+.movingtext{
+
+    color: black !important;
+     word-spacing: 10px;
+     display:flex;
+  
+}
+
+
+@keyframes mymove {
+ 0%{position: relative; right:-1800px;}
+ 100%{position: relative; right: 1200px;}
+  }
+
+
+
+  .scrolling-limit{
+    /* width: 300px; */
+    /* height: 20px; */
+    /* background-color: yellow; */
+    overflow:hidden;
+    white-space:nowrap;
+    
+  }
+  
+  .scrolling{
+    position: relative;
+    -webkit-animation: scroll 20s infinite linear;;
+    -moz-animation: scroll 20s infinite linear;
+    -o-animation: scroll 20s infinite linear;
+    animation: scroll 20s infinite linear;
+  }
+  
+  /* @keyframes scroll{
+      0%   {left: 500px;}
+      100% {left: -950px;}
+  }
+  @-webkit-keyframes scroll{
+      0%   {left: 500px;}
+      100% {left: -950px;}
+  } */

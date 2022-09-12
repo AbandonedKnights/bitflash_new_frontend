@@ -1,0 +1,79 @@
+html[data-theme='light'] {
+    --color: rgb(5, 5, 5);
+    --background-color: rgb(255, 255, 255);
+    --nft-background: #fafafa;
+    --input-background: #ededed;
+  }
+  
+  [data-theme='light'] .ant-card-bordered {
+    border: 1px solid #f0f0f0 !important;
+  }
+  
+  [data-theme='light'] .menu-bar,
+  [data-theme='dark'] .background-mode {
+    background-color: var(--background-color) !important;
+  }
+  
+  [data-theme='light'] .ant-modal-header {
+    background-color: #fff !important;
+  }
+  
+  [data-theme='light'] .dropzone {
+    color: rgba(45, 46, 46, 0.35);
+    border: 1px dashed rgba(0, 0, 0, 0.3);
+  }
+  
+  [data-theme='light'] .choose > .active {
+    border: 1px solid rgb(0, 102, 255) !important;
+  }
+  
+  [data-theme='light'] .textmode,
+  .search-style,
+  .ant-select-suffix > svg,
+  .ant-form-item-required {
+    color: black !important;
+  }
+  
+  [data-theme='light'] .ant-menu-vertical > .ant-menu-item-selected {
+    background-color: #e6f7ff !important;
+  }
+  
+  [data-theme='light'] .ant-menu-submenu-popup > .ant-menu,
+  .ant-radio-button-wrapper {
+    background-color: #fff !important;
+  }
+  
+  [data-theme='light'] .dropdown-select-chain {
+    background-color: #ffffff !important;
+  }
+  
+  [data-theme='light'] .dropdown-select-chain img {
+    box-shadow: 0 0 0 2px #dfe8f9;
+  }
+  
+  [data-theme='light'] .dropdown_network_header {
+    background-color: #f0f5f9 !important;
+  }
+  
+  [data-theme='light'] .ant-notification-notice a {
+    font-weight: bold;
+  }
+  
+  [data-theme='light'] .banner-stake--container {
+    /* background: url('../Assets/bg-light.png') center; */
+  }
+  
+  [data-theme='light']  .banner-stake__total-lock .value,[data-theme='light'] .banner-stake__price-wana .value {
+    color: #f9ca24;
+  }
+  
+  [data-theme='light'] .banner-stake__total-lock, [data-theme='light'] .banner-stake__price-wana {
+    background: #3fbb98;
+  }
+  
+  [data-theme='light'] .banner-stake__title h3 {
+    color: #F09F42;
+  }
+  [data-theme='light'] #countdown {
+    color: #fff;
+  }
